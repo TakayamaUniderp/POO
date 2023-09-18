@@ -23,5 +23,10 @@ public class App {
     95, 2, "P1231");
     aviao1.imprimir();
 
+    //professor, no decorrer do processo, surgiram algumas dúvidas, como por exemplo:
+    //"ônibus tem eixo? avião tem placa? avião tem renavam? existe moto com mais de um motor? etc... 
+    //Creio que não afetará na nota esses conceitos, mas sim o diagrama e o código bem produzidos, 
+    //mas achei pertinente comentar sobre essas dúvidas que me ocorreram."
+
     }
 }
