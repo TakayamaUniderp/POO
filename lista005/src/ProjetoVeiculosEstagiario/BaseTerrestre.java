@@ -1,4 +1,5 @@
-abstract class BaseTerrestre extends BaseVeiculo {
+package ProjetoVeiculosEstagiario;
+abstract class BaseVeiculosTerrestre extends BaseVeiculo {
     
     protected String chassi;
     protected String placa;
@@ -6,7 +7,7 @@ abstract class BaseTerrestre extends BaseVeiculo {
     protected String estadoUF;
     protected String cidadeUF;
     
-    public BaseTerrestre(int id, String nome, String modelo, String cor, int anoModelo,
+    public BaseVeiculosTerrestre(int id, String nome, String modelo, String cor, int anoModelo,
             int anoFabricacao, String pesoLiquido, String pesoTotal, int assentos, int rodas, String fabricante,
             double potencia, String tipoCombustivel, String nomeProprietario, String tipoVeiculo, int qtdeOcupantes,
             String chassi, String placa, String codigoRenavam, String estadoUF, String cidadeUF) {

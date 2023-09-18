@@ -1,34 +1,35 @@
-public class Caminhao extends BaseTerrestre {
-    
-    private int eixos;
-    private String tipoCarga;
+package ProjetoVeiculosEstagiario;
+public class Carro extends BaseVeiculosTerrestre {
+    private int portas;
+    private boolean eletrico;
 
-    public Caminhao(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
+    public Carro(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
             String pesoLiquido, String pesoTotal, int assentos, int rodas, String fabricante, double potencia,
             String tipoCombustivel, String nomeProprietario, String tipoVeiculo, int qtdeOcupantes, String chassi,
-            String placa, String codigoRenavam, String estadoUF, String cidadeUF, int eixos, String tipoCarga) {
+            String placa, String codigoRenavam, String estadoUF, String cidadeUF, int portas, boolean eletrico) {
         super(id, nome, modelo, cor, anoModelo, anoFabricacao, pesoLiquido, pesoTotal, assentos, rodas,
                 fabricante, potencia, tipoCombustivel, nomeProprietario, tipoVeiculo, qtdeOcupantes, chassi, placa,
                 codigoRenavam, estadoUF, cidadeUF);
-        this.eixos = eixos;
-        this.tipoCarga = tipoCarga;
+        this.portas = portas;
+        this.eletrico = eletrico;
     }
 
-    public int getEixos() {
-        return eixos;
+    public int getPortas() {
+        return portas;
     }
 
-    public void setEixos(int eixos) {
-        this.eixos = eixos;
+    public void setPortas(int portas) {
+        this.portas = portas;
     }
 
-    public String getTipoCarga() {
-        return tipoCarga;
+    public boolean isEletrico() {
+        return eletrico;
     }
 
-    public void setTipoCarga(String tipoCarga) {
-        this.tipoCarga = tipoCarga;
+    public void setEletrico(boolean eletrico) {
+        this.eletrico = eletrico;
     }
+
 
     public void imprimir(){
         System.out.println("CÓDIGO: " + this.id);
@@ -50,14 +51,8 @@ public class Caminhao extends BaseTerrestre {
         System.out.println("CÓDIGO RENAVAM" + this.codigoRenavam);
         System.out.println("ESTADO UF: " + this.estadoUF);
         System.out.println("CIDADE UF: " + this.cidadeUF);
-        System.out.println("EIXOS: " + this.eixos);
-        System.out.println("TIPO DE CARGA: " + this.tipoCarga);
+        System.out.println("PORTAS: " + this.portas);
+        System.out.println("ELÉTRICO: " + this.eletrico);
         System.out.println("");
     }
-
 }
-
-//chassi, placa,
-          //      codigoRenavam, estadoUF, cidadeUF);
-        //this.eixos = eixos;
-        //this.tipoCarga = tipoCarga;

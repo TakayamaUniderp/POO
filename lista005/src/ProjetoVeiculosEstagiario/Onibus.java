@@ -1,16 +1,18 @@
-public class Carro extends BaseTerrestre {
+package ProjetoVeiculosEstagiario;
+public class Onibus extends BaseVeiculosTerrestre {
+    
     private int portas;
-    private boolean eletrico;
+    private String rotas;
 
-    public Carro(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
+    public Onibus(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
             String pesoLiquido, String pesoTotal, int assentos, int rodas, String fabricante, double potencia,
             String tipoCombustivel, String nomeProprietario, String tipoVeiculo, int qtdeOcupantes, String chassi,
-            String placa, String codigoRenavam, String estadoUF, String cidadeUF, int portas, boolean eletrico) {
+            String placa, String codigoRenavam, String estadoUF, String cidadeUF, int portas, String rotas) {
         super(id, nome, modelo, cor, anoModelo, anoFabricacao, pesoLiquido, pesoTotal, assentos, rodas,
                 fabricante, potencia, tipoCombustivel, nomeProprietario, tipoVeiculo, qtdeOcupantes, chassi, placa,
                 codigoRenavam, estadoUF, cidadeUF);
         this.portas = portas;
-        this.eletrico = eletrico;
+        this.rotas = rotas;
     }
 
     public int getPortas() {
@@ -21,14 +23,13 @@ public class Carro extends BaseTerrestre {
         this.portas = portas;
     }
 
-    public boolean isEletrico() {
-        return eletrico;
+    public String getRotas() {
+        return rotas;
     }
 
-    public void setEletrico(boolean eletrico) {
-        this.eletrico = eletrico;
+    public void setRotas(String rotas) {
+        this.rotas = rotas;
     }
-
 
     public void imprimir(){
         System.out.println("CÓDIGO: " + this.id);
@@ -51,7 +52,8 @@ public class Carro extends BaseTerrestre {
         System.out.println("ESTADO UF: " + this.estadoUF);
         System.out.println("CIDADE UF: " + this.cidadeUF);
         System.out.println("PORTAS: " + this.portas);
-        System.out.println("ELÉTRICO: " + this.eletrico);
+        System.out.println("RODAS: " + this.rotas);
         System.out.println("");
     }
+
 }

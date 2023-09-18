@@ -1,22 +1,34 @@
-public class Moto extends BaseTerrestre {
-    private String guidon;
+package ProjetoVeiculosEstagiario;
+public class Caminhao extends BaseVeiculosTerrestre {
+    
+    private int eixos;
+    private String tipoCarga;
 
-    public Moto(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
+    public Caminhao(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
             String pesoLiquido, String pesoTotal, int assentos, int rodas, String fabricante, double potencia,
             String tipoCombustivel, String nomeProprietario, String tipoVeiculo, int qtdeOcupantes, String chassi,
-            String placa, String codigoRenavam, String estadoUF, String cidadeUF, String guidon) {
+            String placa, String codigoRenavam, String estadoUF, String cidadeUF, int eixos, String tipoCarga) {
         super(id, nome, modelo, cor, anoModelo, anoFabricacao, pesoLiquido, pesoTotal, assentos, rodas,
                 fabricante, potencia, tipoCombustivel, nomeProprietario, tipoVeiculo, qtdeOcupantes, chassi, placa,
                 codigoRenavam, estadoUF, cidadeUF);
-        this.guidon = guidon;
+        this.eixos = eixos;
+        this.tipoCarga = tipoCarga;
     }
 
-    public String getGuidon() {
-        return guidon;
+    public int getEixos() {
+        return eixos;
     }
 
-    public void setGuidon(String guidon) {
-        this.guidon = guidon;
+    public void setEixos(int eixos) {
+        this.eixos = eixos;
+    }
+
+    public String getTipoCarga() {
+        return tipoCarga;
+    }
+
+    public void setTipoCarga(String tipoCarga) {
+        this.tipoCarga = tipoCarga;
     }
 
     public void imprimir(){
@@ -39,7 +51,14 @@ public class Moto extends BaseTerrestre {
         System.out.println("CÓDIGO RENAVAM" + this.codigoRenavam);
         System.out.println("ESTADO UF: " + this.estadoUF);
         System.out.println("CIDADE UF: " + this.cidadeUF);
-        System.out.println("GUIDON: " + this.guidon);
+        System.out.println("EIXOS: " + this.eixos);
+        System.out.println("TIPO DE CARGA: " + this.tipoCarga);
         System.out.println("");
     }
+
 }
+
+//chassi, placa,
+          //      codigoRenavam, estadoUF, cidadeUF);
+        //this.eixos = eixos;
+        //this.tipoCarga = tipoCarga;

@@ -1,3 +1,4 @@
+package ProjetoVeiculosEstagiario;
 abstract class BaseId {
    
     protected int id;

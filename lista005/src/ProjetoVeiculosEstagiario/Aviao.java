@@ -1,16 +1,17 @@
+package ProjetoVeiculosEstagiario;
 public class Aviao extends BaseVeiculo {
 
     private int qtdeMotores;
-    private String certificadoTripulacao;
+    private String registroAereo;
 
     public Aviao(int id, String nome, String modelo, String cor, int anoModelo, int anoFabricacao,
             String pesoLiquido, String pesoTotal, int assentos, int rodas, String fabricante, double potencia,
             String tipoCombustivel, String nomeProprietario, String tipoVeiculo, int qtdeOcupantes, int qtdeMotores,
-            String certificadoTripulacao) {
+            String registroAereo) {
         super(id, nome, modelo, cor, anoModelo, anoFabricacao, pesoLiquido, pesoTotal, assentos, rodas,
                 fabricante, potencia, tipoCombustivel, nomeProprietario, tipoVeiculo, qtdeOcupantes);
         this.qtdeMotores = qtdeMotores;
-        this.certificadoTripulacao = certificadoTripulacao;
+        this.registroAereo = registroAereo;
     }
 
     public int getQtdeMotores() {
@@ -22,11 +23,11 @@ public class Aviao extends BaseVeiculo {
     }
 
     public String getCertificadoTripulacao() {
-        return certificadoTripulacao;
+        return registroAereo;
     }
 
-    public void setCertificadoTripulacao(String certificadoTripulacao) {
-        this.certificadoTripulacao = certificadoTripulacao;
+    public void setRegistroAereo(String registroAereo) {
+        this.registroAereo = registroAereo;
     }
     
     public void imprimir(){
@@ -45,7 +46,7 @@ public class Aviao extends BaseVeiculo {
         System.out.println("TIPO DE VEÍCULO: " + this.tipoVeiculo);
         System.out.println("QUANTIDADE DE OCUPANTES: " + this.qtdeOcupantes);
         System.out.println("QUANTIDADE DE MOTORES: " + this.qtdeMotores);
-        System.out.println("CERTIFICADO DE TRIPULAÇÃO: " + this.certificadoTripulacao);
+        System.out.println("CERTIFICADO DE TRIPULAÇÃO: " + this.registroAereo);
         System.out.println("");
     }
 }

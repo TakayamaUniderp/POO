@@ -1,3 +1,4 @@
+package ProjetoVeiculosEstagiario;
 abstract class BaseVeiculo extends BaseId {
     
     protected String nome;
